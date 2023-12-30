@@ -1,5 +1,10 @@
 # After install Ubuntu 22.04 LTS
 
+## 0 - Script After install
+```
+bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/00_after_install.sh -O -)"
+```
+
 ## 1 - Update
 ```
 sudo apt update && sudo apt upgrade -y && sudo apt full-upgrade -y
