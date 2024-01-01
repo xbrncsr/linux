@@ -1,23 +1,25 @@
 # Remove File Temp
 ```
-#Atualização do sistema
-sudo apt udpate && sudo apt upgrade -y
+# ATUALIZANDO O SISTEMA
+sudo apt udpate
+sudo apt upgrade -y
+sudo apt full-upgrade -y
 
-#Limpando a Lixeira
+# LIMPANDO A LIXEIRA
 sudo rm -rf /home/$USER/.local/share/Trash/files/*
 
-#Limpando a pasta temp
+# LIMPANDO A PASTA TEMP
 sudo rm -rf /var/temp/*
 
-#Exclusão de cache inúteis do sistema
+# EXCLUSÃO DE CACHE INÚTEIS DO SISTEMA
 sudo apt clean -y
 
-#Exclusão de programas que não estão sendo mais utilizados pelo sistema
+# EXCLUSÃO DE PACOTES QUE NÃO ESTÃO SENDO MAIS UTILIZADOS PELO SISTEMA
 sudo apt autoremove -y
 
-#Exclusão de arquivos duplicados
+# EXCLUSÃO DE ARQUIVOS DUPLICADOS
 sudo apt autoclean -y
 
-#Resolve pacotes quebrados
+# RESOLVENDO PACOTES QUEBRADOS
 sudo dpkg --configure -a
 ```
