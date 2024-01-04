@@ -9,6 +9,10 @@ sudo apt install -y qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils vi
 ```
 sudo apt install -y qemu-guest-agent
 ```
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 ## Virtualbox
 ```
