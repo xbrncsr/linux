@@ -8,6 +8,10 @@ update_packages() {
 # Função para realizar o upgrade de pacotes
 upgrade_packages() {
     sudo apt upgrade -y && sudo apt full-upgrade -y
+    
+    # Atualizando snaps
+    sudo killall snap-store
+    sudo snap refresh
 }
 
 # Função para resolver pacotes quebrados
