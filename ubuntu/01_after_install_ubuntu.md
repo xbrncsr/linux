@@ -2,7 +2,7 @@
 
 ## 0 - Script After install
 ```
-bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/00_after_install.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/00_after_install.sh -O -)"
 ```
 
 ## 1 - Update

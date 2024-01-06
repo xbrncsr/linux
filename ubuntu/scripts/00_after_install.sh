@@ -28,7 +28,8 @@ while true; do
   case $choice in
     1)
       # Opção 1: Atualizar o sistema
-      sudo apt update && sudo apt upgrade -y && sudo apt full-upgrade -y
+      sudo apt update
+      sudo apt upgrade -y && sudo apt full-upgrade -y
       echo "SISTEMA ATUALIZADO COM SUCESSO!"
       ;;
     2)
@@ -57,6 +58,7 @@ while true; do
       ;;
     3)
       # Opção 2: Instalar Git
+      sudo add-apt-repository ppa:git-core/ppa -y
       sudo apt install -y git
       echo "GIT INSTALADO COM SUCESSO!"
       ;;
