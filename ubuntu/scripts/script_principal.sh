@@ -1,11 +1,10 @@
 #!/bin/bash
 
 # Inclui as funções
-chmod +x funcoes/atualizacao.sh
-chmod +x funcoes/upgrade.sh
-chmod +x funcoes/resolucao.sh
-chmod +x funcoes/limpeza.sh
-
+source <(curl -sSL https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/funcoes/atualizacao.sh)
+source <(curl -sSL https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/funcoes/upgrade.sh)
+source <(curl -sSL https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/funcoes/resolucao.sh)
+source <(curl -sSL https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/funcoes/limpeza.sh)
 
 update_system() {
     if update_packages; then
