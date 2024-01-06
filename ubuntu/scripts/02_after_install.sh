@@ -28,9 +28,7 @@ while true; do
   case $choice in
     1)
       # Opção 1: Atualizar o sistema
-      sudo apt update
-      sudo apt upgrade -y && sudo apt full-upgrade -y
-      echo "SISTEMA ATUALIZADO COM SUCESSO!"
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)"
       ;;
     2)
       # Opção 2: Instalar Fontes Microsoft, Htop, IPcalc, Gparted, Neofetch, FFmpeg e Habilitar x86
