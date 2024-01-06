@@ -89,7 +89,7 @@ function execute_command11() {
 }
 
 # Função principal
-function resolve_broken_packages() {
+function fix_broken_packages() {
     execute_command1
     execute_command2
     execute_command3
@@ -111,4 +111,4 @@ function resolve_broken_packages() {
 }
 
 # Executar Função principal
-resolve_broken_packages
+fix_broken_packages

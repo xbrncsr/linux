@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Função para atualizar a lista de pacotes
-update_packages() {
+update_system() {
     sudo apt update
 }
 
@@ -49,7 +49,7 @@ system_cleaning() {
 
 # Função principal para realizar a atualização completa do sistema
 update_system() {
-    if update_packages; then
+    if update_system; then
         echo "Atualização da lista de pacotes concluída com sucesso."
         if upgrade_packages; then
             echo "Upgrade de pacotes bem-sucedido."
