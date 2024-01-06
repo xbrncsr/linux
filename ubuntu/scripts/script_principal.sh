@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Inclui as funções
-source https://github.com/cesarbrunoms/linux/blob/main/ubuntu/scripts/funcoes/atualizacao.sh
-source https://github.com/cesarbrunoms/linux/blob/main/ubuntu/scripts/funcoes/upgrade.sh
-source https://github.com/cesarbrunoms/linux/blob/main/ubuntu/scripts/funcoes/resolucao.sh
-source https://github.com/cesarbrunoms/linux/blob/main/ubuntu/scripts/funcoes/limpeza.sh
+curl -sSL https://github.com/cesarbrunoms/linux/blob/main/ubuntu/scripts/funcoes/atualizacao.sh
+curl -sSL https://github.com/cesarbrunoms/linux/blob/main/ubuntu/scripts/funcoes/upgrade.sh
+curl -sSL https://github.com/cesarbrunoms/linux/blob/main/ubuntu/scripts/funcoes/resolucao.sh
+curl -sSL https://github.com/cesarbrunoms/linux/blob/main/ubuntu/scripts/funcoes/limpeza.sh
 
 update_system() {
     if update_packages; then
