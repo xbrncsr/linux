@@ -34,9 +34,6 @@ system_cleaning() {
     sudo rm -rf /var/cache/apt/archives/partial/*
     sudo rm -rf /var/cache/apt/*.bin
 
-    # Limpa os logs antigos
-    sudo journalctl --vacuum-time=7d
-
     # Limpa arquivos temporários
     sudo rm -rf /tmp/*
 
