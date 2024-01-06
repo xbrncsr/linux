@@ -40,9 +40,6 @@ system_cleaning() {
     # Limpa arquivos temporários
     sudo rm -rf /tmp/*
 
-    # Remove pacotes órfãos
-    sudo deborphan | xargs sudo apt-get -y remove --purge
-
     # Limpa o histórico de comandos
     history -c
 
