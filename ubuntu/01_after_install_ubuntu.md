@@ -7,11 +7,14 @@ bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu
 
 ## 1 - Update
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt full-upgrade -y
+sudo apt update
+sudo apt upgrade -y
+sudo apt full-upgrade -y
 ```
 
 ```
-snap-store --quit && sudo snap refresh snap-store
+sudo killall snap-store
+sudo snap refresh
 ```
 
 ## 2 - Install Extras
