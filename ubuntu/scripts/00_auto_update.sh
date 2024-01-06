@@ -1,23 +1,24 @@
 #!/bin/bash
 
-# Atualizar a lista de pacotes
+# Função para atualizar a lista de pacotes
 update_packages() {
     sudo apt update
 }
 
-# Realizar upgrade de pacotes
+# Função para realizar o upgrade de pacotes
 upgrade_packages() {
     sudo apt upgrade -y && sudo apt full-upgrade -y
 }
 
-# Resolvendo pacotes quebrados
-resolve_broken_packages(){
-    sudo apt --fix-broken install -y ; sudo dpkg --configure -a ; sudo apt-get install -f -y
-
+# Função para resolver pacotes quebrados
+resolve_broken_packages() {
+    sudo apt --fix-broken install -y
+    sudo dpkg --configure -a
+    sudo apt-get install -f -y
 }
 
-# Limpeza do sistema
-system_cleaning(){
+# Função para realizar a limpeza do sistema
+system_cleaning() {
     # Remove pacotes desnecessários
     sudo apt autoremove -y
     sudo apt autoclean -y
@@ -42,13 +43,13 @@ system_cleaning(){
     # Remove pacotes órfãos
     sudo deborphan | xargs sudo apt-get -y remove --purge
 
-    # Limpa histórico de comandos
+    # Limpa o histórico de comandos
     history -c
 
     echo "Limpeza completa concluída."
 }
 
-# Função para realizar a atualização completa do sistema
+# Função principal para realizar a atualização completa do sistema
 update_system() {
     if update_packages; then
         echo "Atualização da lista de pacotes concluída com sucesso."
