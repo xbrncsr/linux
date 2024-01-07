@@ -12,3 +12,8 @@ bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu
 bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/02_after_install.sh -O -)"
 ```
 
+<h2> 3 - Install APPs SNAP</h2>
+
+```
+bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/03_install_apps_snaps.sh -O -)"
+```

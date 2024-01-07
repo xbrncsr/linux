@@ -7,9 +7,7 @@ update_system() {
 
 # Função para realizar o upgrade de pacotes
 upgrade_packages() {
-    sudo apt upgrade -y
-    
-    
+    sudo apt upgrade -y    
 }
 
 # Função para resolver pacotes quebrados
@@ -42,20 +40,20 @@ system_cleaning() {
     # Limpa o histórico de comandos
     history -c
 
-    echo "Limpeza completa concluída."
+    echo "=====================> [ LIMPEZA COMPLETA CONCLUÍDA! ]"
 }
 
 # Função principal para realizar a atualização completa do sistema
 update_system() {
     if update_system; then
-        echo "Atualização da lista de pacotes concluída com sucesso."
+        echo "=====================> [ UPDATE DA LISTA DE PACOTES CONCLUÍDA COM SUCESSO! ]"
         if upgrade_packages; then
-            echo "Upgrade de pacotes bem-sucedido."
+            echo "=====================> [ UPGRADE DE PACOTES CONCLUÍDA COM SUCESSO! ]"
         else
-            echo "Erro ao realizar o upgrade de pacotes. Verifique e corrija antes de prosseguir."
+            echo "=====================> [ ERRO! ]"
         fi
     else
-        echo "Erro ao atualizar a lista de pacotes. Verifique sua conexão com a internet e tente novamente."
+        echo "=====================> [ RESOLVENDO PACOTES QUEBRADOS! ]"
         # Adicione ações de recuperação, se necessário
         resolve_broken_packages
     fi
