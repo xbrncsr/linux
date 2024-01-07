@@ -52,27 +52,27 @@ while true; do
       echo "FFMPEG INSTALADO COM SUCESSO!"
       echo "HABILITANDO X86"
       sudo dpkg --add-architecture i386
-      echo "X86 HABILITADO COM SUCESSO!"
+      echo "=====================> [ X86 HABILITADO COM SUCESSO! ]"
       ;;
     3)
       # Opção 2: Instalar Git
-      sudo add-apt-repository ppa:git-core/ppa -y
-      sudo apt install -y git
-      echo "GIT INSTALADO COM SUCESSO!"
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_git.sh -O -)"
+      
       ;;
     4)
       # Opção 2: Instalar Virt-Manager
-      sudo apt install -y qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager && sudo usermod -a -G libvirt $USER
-      echo "VIRT-MANAGER INSTALADO COM SUCESSO!"
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virt_manager.sh -O -)"
+      
       ;;
     5)
       # Opção 2: Instalar VirtualBox
-      sudo apt install -y virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
-      echo "VIRTUALBOX INSTALADO COM SUCESSO!"
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virtualbox.sh -O -)"
+      
       ;;
     6)
       # Opção 2: Instalar Google Chrome
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_google_chrome.sh -O -)"
+      
       ;;
     7)
       # Opção 3: Sair do script
@@ -80,11 +80,11 @@ while true; do
       ;;
     *)
       # Opção inválida
-      echo "OPÇÃO INVÁLIDA. TENTE NOVAMENTE."
+      echo "=====================> [ OPÇÃO INVÁLIDA, TENTE NOVAMENTE! ]"
       ;;
   esac
 
   # Pausa para o usuário ler a mensagem antes de limpar a tela
-  read -p "PRESSIONE ENTER PARA CONTINUAR..."
+  read -p "=====================> [ PRESSIONE ENTER PARA CONTINUAR...! ]"
 
 done

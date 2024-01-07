@@ -12,7 +12,7 @@ install_google_chrome(){
     # Remover o pacote baixado (opcional)
     rm google-chrome-stable.deb
 
-    echo "GOOGLE CHROME INSTALADO COM SUCESSO!"
+    echo "=====================> [ GOOGLE CHROME INSTALADO COM SUCESSO! ]"
 }
 
 #
