@@ -44,13 +44,13 @@ system_cleaning() {
 }
 
 # Função principal para realizar a atualização completa do sistema
-update_system() {
+main() {
     if update_system; then
         echo "=====================> [ UPDATE DA LISTA DE PACOTES CONCLUÍDA COM SUCESSO! ]"
         if upgrade_packages; then
             echo "=====================> [ UPGRADE DE PACOTES CONCLUÍDA COM SUCESSO! ]"
         else
-            echo "=====================> [ ERRO! ]"
+            echo "=====================> [ ERRO NO UPGRADE DE PACOTES! ]"
         fi
     else
         echo "=====================> [ RESOLVENDO PACOTES QUEBRADOS! ]"
@@ -63,4 +63,4 @@ update_system() {
 }
 
 # Chama a função principal
-update_system
+main
