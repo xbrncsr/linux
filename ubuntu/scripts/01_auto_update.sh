@@ -9,9 +9,7 @@ update_system() {
 upgrade_packages() {
     sudo apt upgrade -y
     
-    # Atualizando snaps
-    sudo killall snap-store
-    sudo snap refresh
+    
 }
 
 # Função para resolver pacotes quebrados
