@@ -6,14 +6,15 @@ mostrar_menu() {
   echo "+---------------------------------------------+"
   echo "|       SELECIONE UMA OPÇÃO:                  |"
   echo "|   1. Atualizar o sistema                    |"
-  echo "|   2. Instalar Fontes Microsoft, Htop,       |"
+  echo "|   2. Instalar Ubuntu Restricted Extras      |"
+  echo "|   3. Instalar Fontes Microsoft, Htop,       |"
   echo "|   IPCalc, Gparted, Neofetch, FFmpeg e       |"
   echo "|   Habilitar x86                             |"
-  echo "|   3. Instalar Git                           |"
-  echo "|   4. Instalar Virt-Manager                  |"
-  echo "|   5. Instalar VirtualBox                    |"
-  echo "|   6. Instalar Google Chrome                 |"
-  echo "|   7. Sair                                   |"
+  echo "|   4. Instalar Git                           |"
+  echo "|   5. Instalar Virt-Manager                  |"
+  echo "|   6. Instalar VirtualBox                    |"
+  echo "|   7. Instalar Google Chrome                 |"
+  echo "|   8. Sair                                   |"
   echo "+---------------------------------------------+"
 
 }
@@ -31,6 +32,10 @@ while true; do
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)"
       ;;
     2)
+      # Opção 2: Instalar Ubuntu Restricted Extras
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)"
+      ;;
+    3)
       # Opção 2: Instalar Fontes Microsoft, Htop, IPcalc, Gparted, Neofetch, FFmpeg e Habilitar x86
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_fonts_microsoft.sh -O -)"
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_htop.sh -O -)"
@@ -40,27 +45,27 @@ while true; do
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ffmpeg.sh -O -)"
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/enable_x86.sh -O -)"
       ;;
-    3)
+    4)
       # Opção 2: Instalar Git
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_git.sh -O -)"
       
       ;;
-    4)
+    5)
       # Opção 2: Instalar Virt-Manager
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virt_manager.sh -O -)"
       
       ;;
-    5)
+    6)
       # Opção 2: Instalar VirtualBox
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virtualbox.sh -O -)"
       
       ;;
-    6)
+    7)
       # Opção 2: Instalar Google Chrome
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_google_chrome.sh -O -)"
       
       ;;
-    7)
+    8)
       # Opção 3: Sair do script
       break
       ;;
