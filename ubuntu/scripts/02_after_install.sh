@@ -32,27 +32,13 @@ while true; do
       ;;
     2)
       # Opção 2: Instalar Fontes Microsoft, Htop, IPcalc, Gparted, Neofetch, FFmpeg e Habilitar x86
-      echo "INSTALANDO FONTES MICROSOFT"
-      sudo apt install -y ttf-mscorefonts-installer
-      echo "FONTES MICROSOFT INSTALADAS COM SUCESSO!"
-      echo "INSTALANDO HTOP"
-      sudo apt install -y htop
-      echo "HTOP INSTALADO COM SUCESSO!"
-      echo "INSTALANDO IPCALC"
-      sudo apt install -y ipcalc
-      echo "IPCALC INSTALADO COM SUCESSO!"
-      echo "INSTALANDO GPARTED"
-      sudo apt install -y gpaterd
-      echo "GPARTED INSTALADO COM SUCESSO!"
-      echo "INSTALANDO NEOFETCH"
-      sudo apt install -y neofetch
-      echo "NEOFETCH INSTALADO COM SUCESSO!"
-      echo "INSTALANDO FFMPEG"
-      sudo apt install -y ffmpeg
-      echo "FFMPEG INSTALADO COM SUCESSO!"
-      echo "HABILITANDO X86"
-      sudo dpkg --add-architecture i386
-      echo "=====================> [ X86 HABILITADO COM SUCESSO! ]"
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_fonts_microsoft.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_htop.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ipcalc.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_gparted.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_neofetch.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ffmpeg.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/enable_x86.sh -O -)"
       ;;
     3)
       # Opção 2: Instalar Git
