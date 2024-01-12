@@ -55,7 +55,7 @@ PermitRootLogin yes
 <h3>f - Restart SSH</h3>
 
 ```
-sudo service ssh restart
+sudo systemctl restart ssh
 
 ```
 
@@ -83,22 +83,4 @@ ssh user@ip
 
 ```
 <br><br>
-
-<h2>3 - GERENCIANDO USUÁRIO</h2> <br>
-FONTE: https://youtu.be/zU5sisowCgw?si=USWfUp_YICfoMDuy
-
-<h3>a - Criando usuário:</h3>
-
-```
-sudo adduser UserName
-
-```
-
-
-<h3>b - Adicionando nosso usuário ao grupo sudo:</h3>
-
-```
-sudo adduser orthanc sudo
-
-```
 
