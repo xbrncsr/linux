@@ -1,216 +1,286 @@
-# Coletando informações do sistema pelo terminal
+<h1>Coletando informações do sistema pelo terminal
 
-## Frequência e o tipo da memória RAM
-```
+<h2>Frequência e o tipo da memória RAM</h2>
+
+```shell
 sudo lshw -short -C memory
+
 ```
 
-## Informações da memória RAM
-```
+<h2>Informações da memória RAM</h2>
+
+```shell
 less /proc/meminfo
-```
 
 ```
+
+```shell
 free
+
 ```
 
-## Número de série do sistema, nome do fabricante e modelo
-```
+<h2>Número de série do sistema, nome do fabricante e modelo</h2>
+
+```shell
 sudo dmidecode -­s system­serial­number
-```
 
 ```
+
+```shell
 sudo dmidecode ­-s system­manufacturer
-```
 
 ```
+
+```shell
 sudo dmidecode ­-s system­product­name
-```
 
 ```
+
+```shell
 sudo dmidecode | more
+
 ```
 
-## Informação da CPU do sistema
-```
+<h2>Informação da CPU do sistema</h2>
+
+```shell
 cat /proc/cpuinfo
-```
 
 ```
+
+```shell
 lscpu
+
 ```
 
-## Estatísticas relacionadas a CPU (processadores)
-```
+<h2>Estatísticas relacionadas a CPU (processadores)</h2>
+
+```shell
 sudo mpstat
+
 ```
 
-## Exibição em megabytes
-```
+<h2>Exibição em megabytes</h2>
+
+```shell
 free ­-m
+
 ```
 
-## Exibição em gigabytes
-```
+<h2>Exibição em gigabytes</h2>
+
+```shell
 free ­-g
+
 ```
 
-## Uso do espaço da memória swap
-```
+<h2>Uso do espaço da memória swap</h2>
+
+```shell
 swapon -­s
-```
 
 ```
+
+```shell
 cat /proc/swaps
-```
 
 ```
+
+```shell
 cat /proc/meminfo
-```
 
 ```
+
+```shell
 vmstat
+
 ```
 
-## Versão de distribuição Ubuntu Linux
-```
+<h2>Versão de distribuição Ubuntu Linux</h2>
+
+```shell
 lsb_release ­-a
+
 ```
 
-## Versão do kernel Linux
-```
+<h2>Versão do kernel Linux</h2>
+
+```shell
 uname ­-r
-```
 
 ```
+
+```shell
 uname ­-a
+
 ```
 
-## Informações dos parâmetros do kernel
-```
+<h2>Informações dos parâmetros do kernel</h2>
+
+```shell
 cat /proc/cmdline
-```
 
 ```
+
+```shell
 sysctl ­-a | more
+
 ```
 
-## 32 ou 64 bits?
-```
+<h2>32 ou 64 bits?</h2>
+
+```shell
 getconf LONG_BIT
+
 ```
 
-## Informações do disco (atributos, uso, espaço)
-```
+<h2>Informações do disco (atributos, uso, espaço)</h2>
+
+```shell
 sudo fdisk ­-l /dev/sda
-```
 
 ```
+
+```shell
 sudo blkid
-```
 
 ```
+
+```shell
 sudo lsblk
-```
 
 ```
+
+```shell
 df ­-H
-```
 
 ```
+
+```shell
 du -­sh {{pasta_específica}}
-```
 
 ```
+
+```shell
 sudo iostat
+
 ```
 
-## Informações de dispositivos PCI
-```
+<h2>Informações de dispositivos PCI</h2>
+
+```shell
 lspci
-```
 
 ```
+
+```shell
 lspci ­vvvn| less
+
 ```
 
-## Informações de dispositivos USB
-```
+<h2>Informações de dispositivos USB</h2>
+
+```shell
 lsusb
-```
 
 ```
+
+```shell
 lsusb ­-vt
+
 ```
 
-## Informações de dispositivos gráficos (NVIDIA/AMD)
-```
+<h2>Informações de dispositivos gráficos (NVIDIA/AMD)</h2>
+
+```shell
 nvidia­smi
-```
 
 ```
+
+```shell
 nvidia­settings
-```
 
 ```
+
+```shell
 fglrxinfo
+
 ```
 
-## Informações de dispositivos de áudio
-```
+<h2>Informações de dispositivos de áudio</h2>
+
+```shell
 cat /proc/asound/cards
-```
 
 ```
+
+```shell
 arecord ­-l
+
 ```
 
-## Informações de uso do sistema
-```
+<h2>Informações de uso do sistema</h2>
+
+```shell
 uptime
-```
 
 ```
+
+```shell
 cat /proc/loadavg
-```
 
 ```
+
+```shell
 sudo top
-```
 
 ```
+
+```shell
 last reboot
+
 ```
 
-## Informações dos drivers do Kernel (módulos)
-```
+<h2>Informações dos drivers do Kernel (módulos)</h2>
+
+```shell
 sudo lsmod
-```
 
 ```
+
+```shell
 sudo modinfo {{nome driver}}
-```
 
 ```
+
+```shell
 sudo modinfo kvm
+
 ```
 
-## Informações de todos os serviços em execução
-```
+<h2>Informações de todos os serviços em execução</h2>
+
+```shell
 sudo service –status­all
-```
 
 ```
+
+```shell
 sudo initctl list
+
 ```
 
-## Informações de todos os processos
-```
+<h2>Informações de todos os processos</h2>
+
+```shell
 sudo pstree
+
 ```
 
-## Lista de todos os pacotes instalados
-```
+<h2>Lista de todos os pacotes instalados</h2>
+
+```shell
 dpkg ­-l
+
 ```
 

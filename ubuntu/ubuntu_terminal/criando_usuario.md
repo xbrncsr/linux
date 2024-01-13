@@ -5,7 +5,7 @@ FONTE: https://youtu.be/zU5sisowCgw?si=USWfUp_YICfoMDuy
 
 <h2>a - Criando usuário:</h2>
 
-```
+```shell
 sudo adduser UserName
 
 ```
@@ -13,7 +13,7 @@ sudo adduser UserName
 
 <h2>b - Adicionando nosso usuário ao grupo sudo:</h2>
 
-```
+```shell
 sudo adduser UserName sudo
 
 ```

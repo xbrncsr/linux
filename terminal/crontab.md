@@ -1,21 +1,26 @@
-# Crontab
+<h1>Crontab</h1>
 
-## Status Cron
-```
+<h2>Status Cron</h2>
+
+```shell
 /etc/init.d/cron status
+
 ```
 
-## Editando Crontab
-```
+<h2>Editando Crontab</h2>
+
+```shell
 sudo nano /etc/crontab
-```
 
 ```
+
+```shell
   10 18 * * *  root  /home/user/documents/scripts/auto_update.sh
 ```
 
-## Script pré configurado
-```
+<h2>Script pré configurado</h2>
+
+```shell
 #!/bin/bash
 
 # ATUALIZANDO O SISTEMA
@@ -40,9 +45,12 @@ sudo apt autoclean -y
 
 # RESOLVENDO PACOTES QUEBRADOS
 sudo dpkg --configure -a
+
 ```
 
-## Resolvendo permissões com chmod
-```
+<h2>Resolvendo permissões com chmod</h2>
+
+```shell
 sudo chmod 777 auto_update.sh
+
 ```

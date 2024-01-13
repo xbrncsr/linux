@@ -1,5 +1,6 @@
-# Remove File Temp
-```
+<h1>Remove File Temp</h1>
+
+```shell
 # ATUALIZANDO O SISTEMA
 sudo apt udpate
 sudo apt upgrade -y
@@ -22,4 +23,5 @@ sudo apt autoclean -y
 
 # RESOLVENDO PACOTES QUEBRADOS
 sudo dpkg --configure -a
+
 ```

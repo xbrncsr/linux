@@ -1,18 +1,22 @@
-# Resolvendo permissões com chmod
+<h1>Resolvendo permissões com chmod</h1>
 
-## 1 -
-```
+<h2>1 -</h2>
+
+```shell
 sudo chmod 777 NomeDoArquivo.sh
+
 ```
 
-## ou
+<h4>ou</h4>
 
-## 2 -
-```
+```shell
 sudo chmod a+x NomeDoArquivo.sh
+
 ```
 
-## Executar
-```
+<h2>Executar</h2>
+
+```shell
 sudo ./NomeDoArquivo.sh
+
 ```
