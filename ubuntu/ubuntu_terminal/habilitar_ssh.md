@@ -1,86 +1,86 @@
-<h1>Habilitando e Configurando SSH</h1>
+# Habilitando e Configurando SSH
 
-<h2>2 - CONFIGURANDO - SSH SERVER</h2> <br>
-FONTE: https://youtu.be/1ENAmcUst1Q?si=UnFO871t2xQdA49V
+## 2 - CONFIGURANDO - SSH SERVER
 
-<h3>a - Instalar SSH Server</h3>
+* FONTE: <https://youtu.be/1ENAmcUst1Q?si=UnFO871t2xQdA49V>
 
-```shell
+#### a - Instalar SSH Server
+
+```bash
 sudo apt install openssh-server
 
 ```
 
 
-<h3>b - Iniciar SSH Server</h3>
+#### b - Iniciar SSH Server
 
-```shell
+```bash
 sudo systemctl start ssh
 
 ```
 
 
-<h3>c - Verificar se de fato iniciou o SSH</h3>
+#### c - Verificar se de fato iniciou o SSH
 
-```shell
+```bash
 sudo systemctl status ssh
 
 ```
 
 
-<h3>c - Habilitar para SSH Server iniciar junto com ubuntu</h3>
+#### c - Habilitar para SSH Server iniciar junto com ubuntu
 
-```shell
+```bash
 sudo systemctl enable ssh
 
 ```
 
 
-<h3>d - Permitir usuário root acessar via SSH</h3>
+#### d - Permitir usuário root acessar via SSH
 
-```shell
+```bash
 sudo nano /etc/ssh/sshd_config
 
 ```
 
 
-<h3>e - Modificar a linha:</h3>
+#### e - Modificar a linha:
 
-```shell
+```bash
 #PermitRootLogin prohibit-password
 PermitRootLogin yes
 
 ```
 
 
-<h3>f - Restart SSH</h3>
+#### f - Restart SSH
 
-```shell
+```bash
 sudo systemctl restart ssh
 
 ```
 
 
-<h3>g - Verificar status novamente</h3>
+#### g - Verificar status novamente
 
-```shell
+```bash
 sudo systemctl status ssh
 
 ```
 
 
-<h3>h - (opcional) Permitir o tráfego SSH:</h3>
+#### h - (opcional) Permitir o tráfego SSH:
 
-```shell
+```bash
 sudo ufw allow 22
 
 ```
 
 
-<h3>i - acesso ssh:</h3>
+#### i - acesso ssh:
 
-```shell
+```bash
 ssh user@ip
 
 ```
-<br><br>
 

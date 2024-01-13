@@ -1,5 +1,6 @@
-# **4. Install Android Studio**
-<details><summary>A. Install Android Studio</summary>
+# 4. Install Android Studio
+
+## A. Install Android Studio
 
 ```bash
 sudo apt install -y libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
@@ -10,10 +11,10 @@ sudo apt install -y libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1
 sudo snap install android-studio --classic
 
 ```
-</details><br><br>
 
 
-<details><summary>X. This part is already present in "1_bashrc_config.md"</summary>
+
+## X. This part is already present in "1_bashrc_config.md"
 
 ```bash
 echo '' >> ~/.bashrc
@@ -35,4 +36,4 @@ source ~/.bashrc
 adb --version
 
 ```
-</details><br><br>
+

@@ -1,26 +1,26 @@
-<h1>APPs Snaps verificados</h1>
+# Apps Snaps Verificados
 
-```shell
+```bash
 sudo snap install shotcut --classic
 
 ```
 
-```shell
+```bash
 sudo snap install spotify
 
 ```
 
-```shell
+```bash
 sudo snap install vlc
 
 ```
 
-```shell
+```bash
 sudo snap install winbox
 
 ```
 
-```shell
+```bash
 sudo snap install obsidian --classic
 
 ```

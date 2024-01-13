@@ -1,14 +1,14 @@
-# 6. **Install FVM**
-<details><summary>A. Pub package</summary>
+# 6. Install FVM
+
+## A. Pub package
 
 ```bash
 dart pub global activate fvm
 
 ```
-</details><br><br>
 
 
-<details><summary>X. This part is already present in "1_bashrc_config.md"</summary>
+## X. This part is already present in "1_bashrc_config.md"
 
 ```bash
 echo 'export PATH=$PATH:$HOME/.pub-cache/bin' >> ~/.bashrc
@@ -19,10 +19,9 @@ echo 'export PATH=$PATH:$HOME/.pub-cache/bin' >> ~/.bashrc
 source ~/.bashrc
 
 ```
-</details><br><br>
 
 
-<details><summary>B. Config FVM</summary>
+## B. Config FVM
 
 ```bash
 fvm --version
@@ -66,10 +65,9 @@ fvm install stable
 fvm install 3.10.3
 
 ```
-</details><br><br>
 
 
-<details><summary>C. Usando uma versão especifica do FVM em um projeto</summary>
+## C. Usando uma versão especifica do FVM em um projeto
 
 ```bash
 # Dentro do VSCode no terminal:

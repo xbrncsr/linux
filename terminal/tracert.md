@@ -1,6 +1,6 @@
-<h1>Tracert</h1>
+# Tracert
 
-```shell
+```bash
 traceroute www.msn.com.br
 
 ```

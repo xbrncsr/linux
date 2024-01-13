@@ -1,5 +1,6 @@
-# **1. Bashrc**
-<details><summary>Config bashrc</summary>  
+# 1. Bashrc
+
+## Config bashrc  
 
 ```bash
 echo '' >> ~/.bashrc
@@ -16,7 +17,5 @@ echo 'export PATH=$PATH:$ANDROID_HOME/platform-tools' >> ~/.bashrc
 echo 'export PATH=$PATH:$FLUTTER_HOME/bin' >> ~/.bashrc
 echo 'export PATH=$PATH:$HOME/.pub-cache/bin' >> ~/.bashrc
 
-```  
-</details><br><br>
-
+```
 

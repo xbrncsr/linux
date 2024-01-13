@@ -1,15 +1,15 @@
-<h1>Dividir arquivos pelo terminal</h1>
+# Dividir arquivos pelo terminal
 
-<h2>Dividir</h2>
+## Dividir
 
-```shell
+```bash
 slipt '/home/casa/Downloads/linuxmint-19.1-xfce-64bit/linuxmint-19.1-xfce-64bit.iso' -b 100M --verbose linuxmint-19.1-xfce-64bit.iso
 
 ```
 
-<h2>Juntar</h2>
+## Juntar
 
-```shell
+```bash
 cat linuxmint-19.1-xfce-64* > linuxmint-19.1-xfce-64bit.iso
 
 ```

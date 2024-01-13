@@ -1,5 +1,6 @@
-# **3. Install JDK**
-<details><summary>A. Install SDKMAN</summary>
+# 3. Install JDK
+
+## A. Install SDKMAN
 
 ```bash
 # Remove any version of java installed
@@ -26,10 +27,10 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
 
 ```
-</details><br><br>
 
 
-<details><summary>B. Install specific version jdk</summary>
+
+## B. Install specific version jdk
 
 ```bash
 sdk list java
@@ -56,10 +57,10 @@ sdk current java
 source ~/.bashrc
 
 ```
-</details><br><br>
 
 
-<details><summary>X. This part is already present in "1_bashrc_config.md"</summary>
+
+## X. This part is already present in "1_bashrc_config.md"
 
 ```bash
 # Switching installed java versions
@@ -74,5 +75,4 @@ echo 'alias jdk11="sdk default java 11.0.12-open"' >> ~/.bashrc
 source ~/.bashrc
 
 ```
-</details><br><br>
 

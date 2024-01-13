@@ -1,21 +1,21 @@
-<h1>Instalando e Configurando Git</h1>
+# Instalando e Configurando Git
 
-<h2>Instalando Git</h2> <br>
+## Instalando Git
 
-```shell
+```bash
 sudo add-apt-repository ppa:git-core/ppa -y
 
 ```  
 
-```shell
+```bash
 sudo apt install -y git
 
 ```  
 
 
-<h2>Configurando Git</h2> <br>
+## Configurando Git
 
-```shell
+```bash
 git config --global user.email cesarbrunoms@gmail.com
 git config --global user.name cesarbrunoms
 

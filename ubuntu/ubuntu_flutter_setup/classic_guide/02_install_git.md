@@ -1,22 +1,23 @@
-# **2. Install Git**
-<details><summary>A. Install Git</summary>
-  
-```
+# 2. Install Git
+
+## A. Install Git
+
+```bash
 sudo add-apt-repository ppa:git-core/ppa -y
 
 ```
 
-```
+```bash
 sudo apt install -y git
 
 ```  
-</details><br>
 
-<details><summary>B. Config Git</summary>
 
-```
+## B. Config Git
+
+```bash
 git config --global user.email bruno.cesar@outlook.it
 git config --global user.name cesarbrunoms
 
 ```  
-</details><br><br>
+

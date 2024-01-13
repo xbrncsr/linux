@@ -1,14 +1,18 @@
 # Acesso padrão após instalação
 
 ## Usuário:
-```
+
+```shell
 pi
+
 ```
 
 ## Senha:
-```
+
+```shell
 raspberry
+
 ```
 
-Fontes: <br>
-https://youtu.be/jFRHUt9cBuI
+* Fontes:
+* <https://youtu.be/jFRHUt9cBuI>

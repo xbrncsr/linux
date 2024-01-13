@@ -1,19 +1,16 @@
-<h1>Scripts</h1>
+# Scripts
 
-<h2> 1 - Auto Update</h2>
+## 1 - Auto Update
 
-```
+```bash
 bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/01_auto_update.sh -O -)"
-```
-
-<h2> 2 - After Install</h2>
 
 ```
+
+## 2 - After Install
+
+```bash
 bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/02_after_install.sh -O -)"
-```
-
-<h2> 3 - Install APPs SNAP</h2>
 
 ```
-bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/03_install_apps_snaps.sh -O -)"
-```
+

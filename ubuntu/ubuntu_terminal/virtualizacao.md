@@ -1,30 +1,31 @@
-<h1>Virtualização</h1>
+# Virtualização
 
-<h2>Virt-Manager</h2>
 
-```shell
+## Virt-Manager
+
+```bash
 sudo apt install -y qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager && sudo usermod -a -G libvirt $USER
 
 ```
 
 
-<h4>Guest Agent integração e performance</h4>
+#### Guest Agent integração e performance
 
-```shell
+```bash
 sudo apt install -y qemu-guest-agent
 
 ```
-<br><br>
 
+&nbsp;
 
-<h2>VirtualBox</h2>
+## VirtualBox
 
-```shell
+```bash
 sudo apt install -y virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack
 
 ```
 
-```shell
+```bash
 sudo dpkg-reconfigure virtualbox-dkms
 sudo modprobe vboxdrv
 sudo apt install linux-headers-`uname -r`

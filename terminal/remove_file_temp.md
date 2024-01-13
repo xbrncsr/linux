@@ -1,6 +1,6 @@
-<h1>Remove File Temp</h1>
+# Remove File Temp
 
-```shell
+```bash
 # ATUALIZANDO O SISTEMA
 sudo apt udpate
 sudo apt upgrade -y

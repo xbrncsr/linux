@@ -1,285 +1,285 @@
-<h1>Coletando informações do sistema pelo terminal
+# Coletando informações do sistema pelo terminal
 
-<h2>Frequência e o tipo da memória RAM</h2>
+## Frequência e o tipo da memória RAM
 
-```shell
+```bash
 sudo lshw -short -C memory
 
 ```
 
-<h2>Informações da memória RAM</h2>
+## Informações da memória RAM
 
-```shell
+```bash
 less /proc/meminfo
 
 ```
 
-```shell
+```bash
 free
 
 ```
 
-<h2>Número de série do sistema, nome do fabricante e modelo</h2>
+## Número de série do sistema, nome do fabricante e modelo
 
-```shell
+```bash
 sudo dmidecode -­s system­serial­number
 
 ```
 
-```shell
+```bash
 sudo dmidecode ­-s system­manufacturer
 
 ```
 
-```shell
+```bash
 sudo dmidecode ­-s system­product­name
 
 ```
 
-```shell
+```bash
 sudo dmidecode | more
 
 ```
 
-<h2>Informação da CPU do sistema</h2>
+## Informação da CPU do sistema
 
-```shell
+```bash
 cat /proc/cpuinfo
 
 ```
 
-```shell
+```bash
 lscpu
 
 ```
 
-<h2>Estatísticas relacionadas a CPU (processadores)</h2>
+## Estatísticas relacionadas a CPU (processadores)
 
-```shell
+```bash
 sudo mpstat
 
 ```
 
-<h2>Exibição em megabytes</h2>
+## Exibição em megabytes
 
-```shell
+```bash
 free ­-m
 
 ```
 
-<h2>Exibição em gigabytes</h2>
+## Exibição em gigabytes
 
-```shell
+```bash
 free ­-g
 
 ```
 
-<h2>Uso do espaço da memória swap</h2>
+## Uso do espaço da memória swap
 
-```shell
+```bash
 swapon -­s
 
 ```
 
-```shell
+```bash
 cat /proc/swaps
 
 ```
 
-```shell
+```bash
 cat /proc/meminfo
 
 ```
 
-```shell
+```bash
 vmstat
 
 ```
 
-<h2>Versão de distribuição Ubuntu Linux</h2>
+## Versão de distribuição Ubuntu Linux
 
-```shell
+```bash
 lsb_release ­-a
 
 ```
 
-<h2>Versão do kernel Linux</h2>
+## Versão do kernel Linux
 
-```shell
+```bash
 uname ­-r
 
 ```
 
-```shell
+```bash
 uname ­-a
 
 ```
 
-<h2>Informações dos parâmetros do kernel</h2>
+## Informações dos parâmetros do kernel
 
-```shell
+```bash
 cat /proc/cmdline
 
 ```
 
-```shell
+```bash
 sysctl ­-a | more
 
 ```
 
-<h2>32 ou 64 bits?</h2>
+## 32 ou 64 bits?
 
-```shell
+```bash
 getconf LONG_BIT
 
 ```
 
-<h2>Informações do disco (atributos, uso, espaço)</h2>
+## Informações do disco (atributos, uso, espaço)
 
-```shell
+```bash
 sudo fdisk ­-l /dev/sda
 
 ```
 
-```shell
+```bash
 sudo blkid
 
 ```
 
-```shell
+```bash
 sudo lsblk
 
 ```
 
-```shell
+```bash
 df ­-H
 
 ```
 
-```shell
+```bash
 du -­sh {{pasta_específica}}
 
 ```
 
-```shell
+```bash
 sudo iostat
 
 ```
 
-<h2>Informações de dispositivos PCI</h2>
+## Informações de dispositivos PCI
 
-```shell
+```bash
 lspci
 
 ```
 
-```shell
+```bash
 lspci ­vvvn| less
 
 ```
 
-<h2>Informações de dispositivos USB</h2>
+## Informações de dispositivos USB
 
-```shell
+```bash
 lsusb
 
 ```
 
-```shell
+```bash
 lsusb ­-vt
 
 ```
 
-<h2>Informações de dispositivos gráficos (NVIDIA/AMD)</h2>
+## Informações de dispositivos gráficos (NVIDIA/AMD)
 
-```shell
+```bash
 nvidia­smi
 
 ```
 
-```shell
+```bash
 nvidia­settings
 
 ```
 
-```shell
+```bash
 fglrxinfo
 
 ```
 
-<h2>Informações de dispositivos de áudio</h2>
+## Informações de dispositivos de áudio
 
-```shell
+```bash
 cat /proc/asound/cards
 
 ```
 
-```shell
+```bash
 arecord ­-l
 
 ```
 
-<h2>Informações de uso do sistema</h2>
+## Informações de uso do sistema
 
-```shell
+```bash
 uptime
 
 ```
 
-```shell
+```bash
 cat /proc/loadavg
 
 ```
 
-```shell
+```bash
 sudo top
 
 ```
 
-```shell
+```bash
 last reboot
 
 ```
 
-<h2>Informações dos drivers do Kernel (módulos)</h2>
+## Informações dos drivers do Kernel (módulos)
 
-```shell
+```bash
 sudo lsmod
 
 ```
 
-```shell
+```bash
 sudo modinfo {{nome driver}}
 
 ```
 
-```shell
+```bash
 sudo modinfo kvm
 
 ```
 
-<h2>Informações de todos os serviços em execução</h2>
+## Informações de todos os serviços em execução
 
-```shell
+```bash
 sudo service –status­all
 
 ```
 
-```shell
+```bash
 sudo initctl list
 
 ```
 
-<h2>Informações de todos os processos</h2>
+## Informações de todos os processos
 
-```shell
+```bash
 sudo pstree
 
 ```
 
-<h2>Lista de todos os pacotes instalados</h2>
+## Lista de todos os pacotes instalados
 
-```shell
+```bash
 dpkg ­-l
 
 ```

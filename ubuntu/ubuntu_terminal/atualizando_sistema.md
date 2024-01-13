@@ -1,19 +1,19 @@
-<h1>Atualizando Sistema</h1>
+# Atualizando Sistema
 
-```shell
+```bash
 sudo apt update
 
 ```
 
-```shell
+```bash
 sudo apt upgrade -y
 
 ```
 
 
-<h2>Opcional</h2>
+### Opcional
 
-```shell
+```bash
 sudo apt full-upgrade -y
 
 ```

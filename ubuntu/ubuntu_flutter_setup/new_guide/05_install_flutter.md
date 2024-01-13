@@ -1,5 +1,6 @@
-# 5. **Install Flutter**
-<details><summary>A. Install Flutter</summary>
+# 5. Install Flutter
+
+## A. Install Flutter
 
 ```bash
 sudo apt install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev
@@ -10,10 +11,10 @@ sudo apt install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev
 sudo snap install flutter --classic
 
 ```
-</details><br><br>
 
 
-<details><summary>X. This part is already present in "1_bashrc_config.md"</summary>
+
+## X. This part is already present in "1_bashrc_config.md"
 
 ```bash
 echo 'export FLUTTER_HOME=/home/$USER/snap/flutter/common/flutter' >> ~/.bashrc
@@ -25,10 +26,8 @@ echo 'export PATH=$PATH:$FLUTTER_HOME/bin' >> ~/.bashrc
 source ~/.bashrc
 
 ```
-</details><br><br>
 
-
-<details><summary>B. Mude para JDK11</summary>
+## B. Mude para JDK11
 
 ```bash
 jdk11
@@ -39,5 +38,4 @@ jdk11
 flutter doctor --android-licenses
 
 ```
-</details><br><br>
 

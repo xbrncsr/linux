@@ -1,95 +1,95 @@
-<h1>Criando pen-drive bootável pelo terminal</h2>
+# Criando pen-drive bootável pelo terminal
 
-```shell
+```bash
 fdisk /dev/sdb
 
 ```
 
-d - Exclua todas partições existentes no pendrive
+* d - Exclua todas partições existentes no pendrive
 
-```shell
+```bash
 dd if=/home/bruno/Downloads/arquivoiso.iso of=/dev/sdx bs=1024; sync; status=progress
 
 ```
 
 
-<h2>Converter o disco para MBR com fdisk</h2>
+## Converter o disco para MBR com fdisk
 
-```shell
+```bash
 fdisk /dev/sdx
 
 ```
 
-o – Criar uma tabela de partições (MBR) <br>
-w – Escrever tabela no disco e fechar
+* o – Criar uma tabela de partições (MBR) <br>
+* w – Escrever tabela no disco e fechar
 
 
-<h2>Converter o disco para GPT com fdisk</h2>
+## Converter o disco para GPT com fdisk
 
-```shell
+```bash
 fdisk /dev/sdx
 
 ```
 
-g – Criar uma tabela de partições (GPT) <br>
-w – Escrever tabela no disco e fechar
+* g – Criar uma tabela de partições (GPT)
+* w – Escrever tabela no disco e fechar
 
 
-<h2>Particionando o disco com fdisk</h2>
+## Particionando o disco com fdisk
 
-```shell
+```bash
 fdisk /dev/sdx
 
 ```
 
-n - Cria uma nova partição <br>
-p - Partição primaria <br>
-1 - Numero da partição (somente 1) <br>
-2048 - Primeiro setor <br>
-enter - ultimo setor <br>
-w - grava a tabela no disco e sai <br>
-FONTE: https://youtu.be/R8u_EIls2VI
+* n - Cria uma nova partição
+* p - Partição primaria
+* 1 - Numero da partição (somente 1)
+* 2048 - Primeiro setor
+* enter - ultimo setor
+* w - grava a tabela no disco e sai
+* FONTE: <https://youtu.be/R8u_EIls2VI>
 
 
-<h2>Caso esteja montado desmonte com o comando:</h2>
+## Caso esteja montado desmonte com o comando:
 
-```shell
+```bash
 umount /deb/sdx
 
 ```
 
 
-<h2>O comando para formatação:</h2>
+## O comando para formatação:
 
-```shell
+```bash
 mkfs.vfat -I /dev/sdx
 
 ```
 
-```shell
+```bash
 mkfs.ntfs -I /dev/sdx
 
 ```
 
-```shell
+```bash
 mkfs.exfat -I /dev/sdx
 
 ```
 
 
-<h2>Gravar ISO no PENDRIVE</h2>
+## Gravar ISO no PENDRIVE
 
-```shell
+```bash
 dd if=/home/bruno/Downloads/arquivoiso.iso of=/dev/sdx status=progress && sync
 
 ```
 
 
-<h2>Após a finalização, execute o comando abaixo para remover o pendrive com segurança:</h2>
+## Após a finalização, execute o comando abaixo para remover o pendrive com segurança:
 
-```shell
+```bash
 umount /dev/sdx
 
 ```
 
-FONTE: https://learning.lpi.org/pt/learning-materials/101-500/104/104.1/104.1_01/
+* FONTE: <https://learning.lpi.org/pt/learning-materials/101-500/104/104.1/104.1_01/>
