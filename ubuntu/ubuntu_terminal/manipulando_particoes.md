@@ -1,5 +1,15 @@
 # Manipulando Partições
 
+## Seções:
+
+- [# Acessando a unidade de disco:](# Acessando a unidade de disco:)
+
+- []()
+
+- []()
+
+
+
 ## 1 - Desmonte a unidade de disco
 
 ```bash
