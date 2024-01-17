@@ -2,14 +2,19 @@
 
 ## Seções:
 
-- [Acessando a unidade de disco:](#acessando-a-unidade-de-disco)
+- [1 - Desmonte a unidade de disco](#1---desmonte-a-unidade-de-disco)
 
-- []()
+- [2 - Formatando em GPT](#2---formatando-em-gpt)
 
-- []()
+- [3 - Formatando em MBR](#3---formatando-em-mbr)
 
-- []()
+- [4 - Montando a unidade de disco](#4---montando-a-unidade-de-disco)
 
+- [5 - Acessando a unidade de disco:](#5---acessando-a-unidade-de-disco)
+
+
+&nbsp;
+&nbsp;
 
 
 ## 1 - Desmonte a unidade de disco
@@ -23,8 +28,7 @@ sudo umount /dev/sdX
 &nbsp;
 
 
-## Formatando em GPT
-
+## 2 - Formatando em GPT
 #### Verificando se a partição é GPT
 
 ```bash
@@ -41,12 +45,12 @@ sudo gdisk /dev/sdX
 * - o = Transformar em GPT
 * - w = Para escrever
 
+
 &nbsp;
 &nbsp;
 
 
-## Formatando em MBR
-
+## 3 - Formatando em MBR
 #### Verificando se a partição é MBR
 
 ```bash
@@ -73,12 +77,12 @@ sudo mkfs.ext4 /dev/sdX
 
 ```
 
+
 &nbsp;
 &nbsp;
 
 
-## Montando a unidade de disco
-
+## 4 - Montando a unidade de disco
 #### Crie um Diretório de Ponto de Montagem:
 
 ```bash
@@ -114,11 +118,12 @@ sudo nano /etc/fstab
 
 ```
 
+
 &nbsp;
 &nbsp;
 
 
-## Acessando a unidade de disco:
+## 5 - Acessando a unidade de disco:
 
 ```bash
 cd /mnt/sdX
