@@ -1,24 +1,28 @@
 #!/bin/bash
 
+# Variável para armazenar o estado da tarefa
+tarefa_concluida=false
+
 # Função para mostrar o menu
 mostrar_menu() {
-  choice=$(zenity --list \
-    --title="Menu de Opções" \
-    --text="Selecione uma ou mais opções:" \
-    --column="Número" --column="Opção" \
-    TRUE "Atualizar o sistema" \
-    FALSE "Instalar Ubuntu Restricted Extras" \
-    FALSE "Instalar Fontes Microsoft, Htop, IPCalc, Gparted, Neofetch, FFmpeg e Habilitar x86" \
-    FALSE "Instalar Git" \
-    FALSE "Instalar Virt-Manager" \
-    FALSE "Instalar VirtualBox" \
-    FALSE "Instalar Google Chrome" \
-    FALSE "Sair")
+  clear  
+  echo "+---------------------------------------------+"
+  echo "|       SELECIONE UMA OPÇÃO:                  |"
+  echo "|   1. Atualizar o sistema                    |"
+  echo "|   2. Instalar Ubuntu Restricted Extras      |"
+  echo "|   3. Instalar Fontes Microsoft, Htop,       |"
+  echo "|   IPCalc, Gparted, Neofetch, FFmpeg e       |"
+  echo "|   Habilitar x86                             |"
+  echo "|   4. Instalar Git                           |"
+  echo "|   5. Instalar Virt-Manager                  |"
+  echo "|   6. Instalar VirtualBox                    |"
+  echo "|   7. Instalar Google Chrome                 |"
+  echo "|   8. Sair                                   |"
+  echo "+---------------------------------------------+"
 
-  # Verificar se o usuário cancelou a seleção
-  if [ $? -ne 0 ]; then
-    echo "Saindo do script..."
-    exit 0
+  # Mudar a cor da opção se a tarefa estiver concluída
+  if $tarefa_concluida; then
+    echo -e "\033[32mOPÇÃO CONCLUÍDA\033[0m"
   fi
 }
 
@@ -26,20 +30,22 @@ mostrar_menu() {
 while true; do
   mostrar_menu
 
+  # Ler a escolha do usuário
+  read -p "DIGITE O NÚMERO DA OPÇÃO DESEJADA: " choice
+
   case $choice in
-    "Atualizar o sistema")
+    1)
       # Opção 1: Atualizar o sistema
-      zenity --info --title="Atualizando o Sistema" --text="Atualizando o sistema..."
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)"
+      tarefa_concluida=true
       ;;
-    "Instalar Ubuntu Restricted Extras")
+    2)
       # Opção 2: Instalar Ubuntu Restricted Extras
-      zenity --info --title="Instalando Ubuntu Restricted Extras" --text="Instalando Ubuntu Restricted Extras..."
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ubuntu_restricted_extras.sh -O -)"
+      tarefa_concluida=true
       ;;
-    "Instalar Fontes Microsoft, Htop, IPCalc, Gparted, Neofetch, FFmpeg e Habilitar x86")
+    3)
       # Opção 3: Instalar Fontes Microsoft, Htop, IPcalc, Gparted, Neofetch, FFmpeg e Habilitar x86
-      zenity --info --title="Instalando Pacotes Extras" --text="Instalando pacotes extras..."
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_fonts_microsoft.sh -O -)"
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_htop.sh -O -)"
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ipcalc.sh -O -)"
@@ -47,35 +53,39 @@ while true; do
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_neofetch.sh -O -)"
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ffmpeg.sh -O -)"
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/enable_x86.sh -O -)"
+      tarefa_concluida=true
       ;;
-    "Instalar Git")
+    4)
       # Opção 4: Instalar Git
-      zenity --info --title="Instalando Git" --text="Instalando Git..."
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_git.sh -O -)"
+      tarefa_concluida=true
       ;;
-    "Instalar Virt-Manager")
+    5)
       # Opção 5: Instalar Virt-Manager
-      zenity --info --title="Instalando Virt-Manager" --text="Instalando Virt-Manager..."
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virt_manager.sh -O -)"
+      tarefa_concluida=true
       ;;
-    "Instalar VirtualBox")
+    6)
       # Opção 6: Instalar VirtualBox
-      zenity --info --title="Instalando VirtualBox" --text="Instalando VirtualBox..."
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virtualbox.sh -O -)"
+      tarefa_concluida=true
       ;;
-    "Instalar Google Chrome")
+    7)
       # Opção 7: Instalar Google Chrome
-      zenity --info --title="Instalando Google Chrome" --text="Instalando Google Chrome..."
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_google_chrome.sh -O -)"
+      tarefa_concluida=true
       ;;
-    "Sair")
+    8)
       # Opção 8: Sair do script
-      zenity --info --title="Saindo do Script" --text="Saindo do script..."
-      exit 0
+      break
       ;;
     *)
       # Opção inválida
-      zenity --error --title="Opção Inválida" --text="Opção inválida, tente novamente!"
+      echo "=====================> [ OPÇÃO INVÁLIDA, TENTE NOVAMENTE! ]"
       ;;
   esac
+
+  # Pausa para o usuário ler a mensagem antes de limpar a tela
+  read -p "=====================> [ PRESSIONE ENTER PARA CONTINUAR...! ]"
+
 done
