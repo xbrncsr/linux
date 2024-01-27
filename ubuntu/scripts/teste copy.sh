@@ -2,8 +2,8 @@
 
 # Verifica se o zenity está instalado, e o instala se necessário.
 if ! command -v zenity &> /dev/null; then
-    sudo apt-get update
-    sudo apt-get install -y zenity
+    sudo apt update
+    sudo apt install -y zenity
 fi
 
 # Função para executar tarefa e registrar no log.
