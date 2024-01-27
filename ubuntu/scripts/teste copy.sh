@@ -44,51 +44,51 @@ while true; do
   case $choice in
     1)
       # Opção 1: Atualizar o sistema
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)"
+      output=$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)" 2>&1)
       opcoes_concluidas+=("1")
-      registrar_log "Opção 1 concluída: Atualizar o sistema"
+      registrar_log "Opção 1: Atualizar o sistema\n$output"
       ;;
     2)
       # Opção 2: Instalar Ubuntu Restricted Extras
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ubuntu_restricted_extras.sh -O -)"
+      output=$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ubuntu_restricted_extras.sh -O -)" 2>&1)
       opcoes_concluidas+=("2")
-      registrar_log "Opção 2 concluída: Instalar Ubuntu Restricted Extras"
+      registrar_log "Opção 2: Instalar Ubuntu Restricted Extras\n$output"
       ;;
     3)
       # Opção 3: Instalar Fontes Microsoft, Htop, IPcalc, Gparted, Neofetch, FFmpeg e Habilitar x86
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_fonts_microsoft.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_htop.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ipcalc.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_gparted.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_neofetch.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ffmpeg.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/enable_x86.sh -O -)"
+      output=$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_fonts_microsoft.sh -O -)" 2>&1)
+      output+="\n$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_htop.sh -O -)" 2>&1)"
+      output+="\n$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ipcalc.sh -O -)" 2>&1)"
+      output+="\n$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_gparted.sh -O -)" 2>&1)"
+      output+="\n$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_neofetch.sh -O -)" 2>&1)"
+      output+="\n$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ffmpeg.sh -O -)" 2>&1)"
+      output+="\n$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/enable_x86.sh -O -)" 2>&1)"
       opcoes_concluidas+=("3")
-      registrar_log "Opção 3 concluída: Instalar Fontes Microsoft, Htop, IPcalc, Gparted, Neofetch, FFmpeg e Habilitar x86"
+      registrar_log "Opção 3: Instalar Fontes Microsoft, Htop, IPcalc, Gparted, Neofetch, FFmpeg e Habilitar x86\n$output"
       ;;
     4)
       # Opção 4: Instalar Git
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_git.sh -O -)"
+      output=$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_git.sh -O -)" 2>&1)
       opcoes_concluidas+=("4")
-      registrar_log "Opção 4 concluída: Instalar Git"
+      registrar_log "Opção 4: Instalar Git\n$output"
       ;;
     5)
       # Opção 5: Instalar Virt-Manager
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virt_manager.sh -O -)"
+      output=$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virt_manager.sh -O -)" 2>&1)
       opcoes_concluidas+=("5")
-      registrar_log "Opção 5 concluída: Instalar Virt-Manager"
+      registrar_log "Opção 5: Instalar Virt-Manager\n$output"
       ;;
     6)
       # Opção 6: Instalar VirtualBox
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virtualbox.sh -O -)"
+      output=$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virtualbox.sh -O -)" 2>&1)
       opcoes_concluidas+=("6")
-      registrar_log "Opção 6 concluída: Instalar VirtualBox"
+      registrar_log "Opção 6: Instalar VirtualBox\n$output"
       ;;
     7)
       # Opção 7: Instalar Google Chrome
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_google_chrome.sh -O -)"
+      output=$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_google_chrome.sh -O -)" 2>&1)
       opcoes_concluidas+=("7")
-      registrar_log "Opção 7 concluída: Instalar Google Chrome"
+      registrar_log "Opção 7: Instalar Google Chrome\n$output"
       ;;
     8)
       # Opção 8: Sair do script
