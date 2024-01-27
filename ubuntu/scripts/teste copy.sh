@@ -38,7 +38,7 @@ selected_tasks=$(zenity \
     --text="Choose tasks to execute:" \
     --column="Select" \
     --column="Tasks" \
-    FALSE "${tasks[@]}"
+    FALSE "${tasks[@]/%/ FALSE}"
 )
 
 # Executa as tarefas escolhidas
