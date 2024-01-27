@@ -36,7 +36,8 @@ while true; do
   case $choice in
     1)
       # Opção 1: Atualizar o sistema
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)"
+      sudo apt update
+      sudo apt upgrade -y && sudo apt full-upgrade -y
       opcoes_concluidas+=("1")
       ;;
     2)
