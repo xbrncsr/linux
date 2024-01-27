@@ -6,14 +6,15 @@ mostrar_menu() {
   echo "+---------------------------------------------+"
   echo "|       SELECIONE UMA OPÇÃO:                  |"
   echo "|   1. Atualizar o sistema                    |"
-  echo "|   2. Instalar Ubuntu Restricted Extras      |"
-  echo "|   3. Instalar VLC, GIMP, FFMPEG             |"
-  echo "|   4. Instalar Git                           |"
-  echo "|   5. Instalar Virt-Manager                  |"
-  echo "|   6. Instalar VirtualBox                    |"
-  echo "|   7. Instalar Google Chrome                 |"
-  echo "|   8. Instalar Steam                         |"
-  echo "|   9. Sair                                   |"
+  echo "|   2. Bug Fix Snap Store                     |"
+  echo "|   3. Instalar Ubuntu Restricted Extras      |"
+  echo "|   4. Instalar VLC, GIMP, FFMPEG             |"
+  echo "|   5. Instalar Git                           |"
+  echo "|   6. Instalar Virt-Manager                  |"
+  echo "|   7. Instalar VirtualBox                    |"
+  echo "|   8. Instalar Google Chrome                 |"
+  echo "|   9. Instalar Steam                         |"
+  echo "|   10. Sair                                  |"
   echo "+---------------------------------------------+"
 
 }
@@ -31,41 +32,45 @@ while true; do
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/update_system.sh -O -)"
       ;;
     2)
-      # Opção 2: Instalar Ubuntu Restricted Extras
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_ubuntu_restricted_extras.sh -O -)"
+      # Opção 2. Bug Fix Snap Store
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/bug_fix_snapstore.sh -O -)"
       ;;
     3)
-      # Opção 3. Instalar VLC, GIMP, FFMPEG
+      # Opção 3: Instalar Ubuntu Restricted Extras
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_ubuntu_restricted_extras.sh -O -)"
+      ;;
+    4)
+      # Opção 4. Instalar VLC, GIMP, FFMPEG
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_vlc_gimp_ffmpeg.sh -O -)"
       
       ;;
-    4)
-      # Opção 2: Instalar Git
+    5)
+      # Opção 5: Instalar Git
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_git.sh -O -)"
       
       ;;
-    5)
-      # Opção 2: Instalar Virt-Manager
+    6)
+      # Opção 6: Instalar Virt-Manager
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_virt_manager.sh -O -)"
       
       ;;
-    6)
-      # Opção 2: Instalar VirtualBox
+    7)
+      # Opção 7: Instalar VirtualBox
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_virtualbox.sh -O -)"
       
       ;;
-    7)
-      # Opção 2: Instalar Google Chrome
+    8)
+      # Opção 8: Instalar Google Chrome
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_google_chrome.sh -O -)"
       
       ;;
-    8)
-      # Opção 2: Instalar Steam
+    9)
+      # Opção 9: Instalar Steam
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_steam.sh -O -)"
       
       ;;
-    9)
-      # Opção 3: Sair do script
+    10)
+      # Opção 10: Sair do script
       break
       ;;
     *)
