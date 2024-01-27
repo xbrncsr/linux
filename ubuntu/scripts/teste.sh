@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Variável para armazenar o estado da tarefa
-tarefa_concluida=false
+# Array para armazenar as opções concluídas
+opcoes_concluidas=()
 
 # Função para mostrar o menu
 mostrar_menu() {
@@ -21,8 +21,8 @@ mostrar_menu() {
   echo "+---------------------------------------------+"
 
   # Mudar a cor da opção se a tarefa estiver concluída
-  if $tarefa_concluida; then
-    echo -e "\033[32mOPÇÃO CONCLUÍDA\033[0m"
+  if [ ${#opcoes_concluidas[@]} -gt 0 ]; then
+    echo -e "\033[32m\nOPÇÕES CONCLUÍDAS: ${opcoes_concluidas[@]}\033[0m"
   fi
 }
 
@@ -37,12 +37,12 @@ while true; do
     1)
       # Opção 1: Atualizar o sistema
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)"
-      tarefa_concluida=true
+      opcoes_concluidas+=("1")
       ;;
     2)
       # Opção 2: Instalar Ubuntu Restricted Extras
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ubuntu_restricted_extras.sh -O -)"
-      tarefa_concluida=true
+      opcoes_concluidas+=("2")
       ;;
     3)
       # Opção 3: Instalar Fontes Microsoft, Htop, IPcalc, Gparted, Neofetch, FFmpeg e Habilitar x86
@@ -53,27 +53,27 @@ while true; do
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_neofetch.sh -O -)"
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ffmpeg.sh -O -)"
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/enable_x86.sh -O -)"
-      tarefa_concluida=true
+      opcoes_concluidas+=("3")
       ;;
     4)
       # Opção 4: Instalar Git
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_git.sh -O -)"
-      tarefa_concluida=true
+      opcoes_concluidas+=("4")
       ;;
     5)
       # Opção 5: Instalar Virt-Manager
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virt_manager.sh -O -)"
-      tarefa_concluida=true
+      opcoes_concluidas+=("5")
       ;;
     6)
       # Opção 6: Instalar VirtualBox
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virtualbox.sh -O -)"
-      tarefa_concluida=true
+      opcoes_concluidas+=("6")
       ;;
     7)
       # Opção 7: Instalar Google Chrome
       bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_google_chrome.sh -O -)"
-      tarefa_concluida=true
+      opcoes_concluidas+=("7")
       ;;
     8)
       # Opção 8: Sair do script
