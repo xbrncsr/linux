@@ -44,7 +44,8 @@ while true; do
   case $choice in
     1)
       # Opção 1: Atualizar o sistema
-      output=$(bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)" 2>&1)
+      sudo apt udpate
+      sudo apt upgrade -y && sudo apt full-upgrade -y
       opcoes_concluidas+=("1")
       registrar_log "Opção 1: Atualizar o sistema\n$output"
       ;;
