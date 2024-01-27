@@ -2,4 +2,4 @@
 
 # Install Ubuntu Restricted Extras
 sudo apt install -y ubuntu-restricted-extras
-sudo apt install -y htop ipcalc gparted neofetch
+sudo apt install -y htop ipcalc gparted neofetch gdebi
