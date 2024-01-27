@@ -42,7 +42,7 @@ while true; do
   case $choice in
     1)
       # Opção 1: Atualizar o sistema
-      if sudo apt udpate
+      if bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)" 2>&1; then
         opcoes_concluidas+=("1")
       else
         opcoes_nao_concluidas+=("1")
@@ -63,31 +63,37 @@ while true; do
       else
         opcoes_nao_concluidas+=("3")
       fi
+
       if bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_htop.sh -O -)" 2>&1; then
         opcoes_concluidas+=("Htop")
       else
         opcoes_nao_concluidas+=("Htop")
       fi
+
       if bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ipcalc.sh -O -)" 2>&1; then
         opcoes_concluidas+=("IPCalc")
       else
         opcoes_nao_concluidas+=("IPCalc")
       fi
+
       if bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_gparted.sh -O -)" 2>&1; then
         opcoes_concluidas+=("Gparted")
       else
         opcoes_nao_concluidas+=("Gparted")
       fi
+
       if bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_neofetch.sh -O -)" 2>&1; then
         opcoes_concluidas+=("Neofetch")
       else
         opcoes_nao_concluidas+=("Neofetch")
       fi
+
       if bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ffmpeg.sh -O -)" 2>&1; then
         opcoes_concluidas+=("FFmpeg")
       else
         opcoes_nao_concluidas+=("FFmpeg")
       fi
+
       if bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/enable_x86.sh -O -)" 2>&1; then
         opcoes_concluidas+=("Habilitar x86")
       else
@@ -124,19 +130,4 @@ while true; do
         opcoes_concluidas+=("7")
       else
         opcoes_nao_concluidas+=("7")
-      fi
-      ;;
-    8)
-      # Opção 8: Sair do script
-      break
-      ;;
-    *)
-      # Opção inválida
-      echo "=====================> [ OPÇÃO INVÁLIDA, TENTE NOVAMENTE! ]"
-      ;;
-  esac
-
-  # Pausa para o usuário ler a mensagem antes de limpar a tela
-  read -p "=====================> [ PRESSIONE ENTER PARA CONTINUAR...! ]"
-
-done
+     
