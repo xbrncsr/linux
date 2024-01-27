@@ -42,7 +42,7 @@ while true; do
   case $choice in
     1)
       # Opção 1: Atualizar o sistema
-      if bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)" 2>&1; then
+      if sudo apt update 2>&1; then
         opcoes_concluidas+=("1")
       else
         opcoes_nao_concluidas+=("1")
