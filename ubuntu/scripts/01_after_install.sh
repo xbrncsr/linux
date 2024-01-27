@@ -28,40 +28,40 @@ while true; do
   case $choice in
     1)
       # Opção 1: Atualizar o sistema
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/update_system.sh -O -)"
       ;;
     2)
       # Opção 2: Instalar Ubuntu Restricted Extras
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/script_files/install_ubuntu_restricted_extras.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_ubuntu_restricted_extras.sh -O -)"
       ;;
     3)
       # Opção 3. Instalar VLC, GIMP, FFMPEG
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/script_files/install_vlc_gimp_ffmpeg.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_vlc_gimp_ffmpeg.sh -O -)"
       
       ;;
     4)
       # Opção 2: Instalar Git
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/script_files/install_git.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_git.sh -O -)"
       
       ;;
     5)
       # Opção 2: Instalar Virt-Manager
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/script_files/install_virt_manager.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_virt_manager.sh -O -)"
       
       ;;
     6)
       # Opção 2: Instalar VirtualBox
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/script_files/install_virtualbox.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_virtualbox.sh -O -)"
       
       ;;
     7)
       # Opção 2: Instalar Google Chrome
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/script_files/install_google_chrome.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_google_chrome.sh -O -)"
       
       ;;
     8)
       # Opção 2: Instalar Steam
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/script_files/install_steam.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/ubuntu/scripts/install_steam.sh -O -)"
       
       ;;
     9)
