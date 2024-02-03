@@ -10,7 +10,7 @@
 ## 2. [update_system](/wiki/contents/update_system.md)
 
 ## 3. [firmware_updates](/wiki/contents/firmware_updates.md)
-## 4. [enable_rpm_fusion](/contents/enable_rpm_fusion.md)
+## 4. [enable_rpm_fusion](/wiki/contents/enable_rpm_fusion.md)
 
 ## 5. [flatpak](/wiki/contents/flatpak.md)
 
