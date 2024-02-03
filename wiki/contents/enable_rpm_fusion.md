@@ -9,4 +9,4 @@ sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-non
 
 ```
 
-## 2 - [[update_system]]
+## 2 - [update_system](update_system.md)
