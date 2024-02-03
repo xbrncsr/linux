@@ -1,5 +1,5 @@
 
-## 1 - [[update_system]]
+## 1 - [update_system](update_system.md)
 
 ## 2 - Firmware Update - Fedora
 ```bash
