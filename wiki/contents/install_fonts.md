@@ -30,5 +30,10 @@ sudo apt install -y ttf-mscorefonts-installer
 
 ```
 
+```bash
+sudo apt install -y fonts-roboto fonts-cascadia-code fonts-firacode
+
+```
+
 
 
