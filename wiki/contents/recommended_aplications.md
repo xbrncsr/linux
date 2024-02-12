@@ -6,6 +6,11 @@ flatpak install flathub org.videolan.VLC
 ```
 
 ```bash
+sudo snap install vlc
+
+```
+
+```bash
 sudo dnf install -y vlc
 
 ```
@@ -32,7 +37,6 @@ sudo apt install -y gimp
 ```
 
 #### Dropbox
-
 ```bash
 flatpak install flathub com.dropbox.Client
 
@@ -48,12 +52,6 @@ sudo apt install -y dropbox nautilus-dropbox
 
 ```
 
-#### Transmission
-```bash
-flatpak install flathub com.transmissionbt.Transmission
-
-```
-
 #### Discord
 ```bash
 flatpak install flathub com.discordapp.Discord
@@ -64,21 +62,40 @@ flatpak install flathub com.discordapp.Discord
 flatpak install flathub com.mattjakeman.ExtensionManager
 
 ```
+
 #### Obsidian
 ```bash
 flatpak install flathub md.obsidian.Obsidian
 
 ```
+
+```bash
+sudo snap install obsidian --classic
+
+```
+
 #### Kdenlive
 ```bash
 flatpak install flathub org.kde.kdenlive
 
 ```
+
+```bash
+sudo snap install kdenlive
+
+```
+
 #### Remmina
 ```bash
 flatpak install flathub org.remmina.Remmina
 
 ```
+
+```bash
+sudo snap install remmina
+
+```
+
 #### HandBrake
 ```bash
 flatpak install flathub fr.handbrake.ghb
@@ -92,6 +109,11 @@ flatpak install flathub org.libretro.RetroArch
 #### Telegram Desktop
 ```bash
 flatpak install flathub org.telegram.desktop
+
+```
+
+```bash
+sudo snap install telegram-desktop
 
 ```
 
@@ -115,56 +137,87 @@ flatpak install flathub net.pcsx2.PCSX2
 flatpak install flathub com.brave.Browser
 
 ```
+
+```bash
+sudo snap install brave
+
+```
+
 #### Spotify
 ```bash
 flatpak install flathub com.spotify.Client
 
 ```
+
+```bash
+sudo snap install spotify
+
+```
+
 #### Visual Studio Code
 ```bash
 flatpak install flathub com.visualstudio.code
 
 ```
+
+```bash
+sudo snap install code --classic
+
+```
+
 #### Tor Browser Launcher
 ```bash
 flatpak install flathub org.torproject.torbrowser-launcher
 
 ```
+
 #### AnyDesk
 ```bash
 flatpak install flathub com.anydesk.Anydesk
 
 ```
+
 #### PeaZip
 ```bash
 flatpak install flathub io.github.peazip.PeaZip
 
 ```
+
 #### Proton VPN
 ```bash
 flatpak install flathub com.protonvpn.www
 
 ```
+
 #### Vinegar - Roblox
 ```bash
 flatpak install flathub org.vinegarhq.Vinegar
 
 ```
+
 #### Stremio
 ```bash
 flatpak install flathub com.stremio.Stremio
 
 ```
+
 #### FileZilla
 ```bash
 flatpak install flathub org.filezillaproject.Filezilla
 
 ```
+
 #### Flameshot
 ```bash
 flatpak install flathub org.flameshot.Flameshot
 
 ```
+
+```bash
+sudo snap install flameshot
+
+```
+
 #### GNOME Network Displays
 ```bash
 flatpak install flathub org.gnome.NetworkDisplays
