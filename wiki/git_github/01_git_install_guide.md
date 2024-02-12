@@ -3,14 +3,21 @@
 &nbsp;
 
 ## Install Git - Fedora
+* LINK SCRIPT:
+```bash
+sudo sh -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/wiki/git_github/install_git_fedora.sh -O -)"
+
+```
+
 ```bash
 sudo dnf install -y git
 
 ```
 
 ## Install Git - Ubuntu
+* LINK SCRIPT:
 ```bash
-sudo add-apt-repository ppa:git-core/ppa -y
+sudo sh -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/wiki/git_github/install_git_ubuntu.sh -O -)"
 
 ```
 
