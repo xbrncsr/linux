@@ -7,7 +7,7 @@ sudo apt install -y x11vnc
 x11vnc -storepasswd
 
 # Start the X11VNC Server
-x11vnc -usepw -display :0
+#x11vnc -usepw -display :0
 
 # Config X11VNC
 sudo tee /etc/systemd/system/x11vnc.service > /dev/null <<'EOF'
