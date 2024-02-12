@@ -230,3 +230,25 @@ flatpak install flathub org.freedownloadmanager.Manager
 
 ```
 
+#### wine
+```bash
+flatpak install flathub org.winehq.Wine
+
+```
+
+#### winbox
+```bash
+sudo snap install winbox
+
+```
+
+#### Shotcut
+```bash
+flatpak install flathub org.shotcut.Shotcut
+
+```
+
+```bash
+sudo snap install shotcut --classic
+
+```
