@@ -2,12 +2,16 @@
 
 &nbsp;
 
-SOURCE:
-* <https://youtu.be/1ENAmcUst1Q?si=9ggtvTTp1-JW5aYE>
+SOURCE: <https://youtu.be/1ENAmcUst1Q?si=9ggtvTTp1-JW5aYE>
+
+## LINK SCRIPT:
+```bash
+sudo sh -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/wiki/remote_access/ssh_service_ubuntu/install_ssh_service_ubuntu.sh -O -)"
+
+```
 
 
-
-## Install SSH Service - Ubuntu
+## Install SSH Service - Ubuntu / Linux Mint
 ```bash
 sudo apt install -y openssh-server
 
