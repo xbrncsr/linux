@@ -21,7 +21,7 @@ x11vnc -storepasswd
 
 ## Start the X11VNC Server
 ```bash
-x11vnc -usepw -display :0 
+#x11vnc -usepw -display :0 
 
 ```
 
