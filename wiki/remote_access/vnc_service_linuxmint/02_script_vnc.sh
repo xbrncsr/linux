@@ -3,9 +3,6 @@
 # Install X11VNC
 sudo apt install -y x11vnc
 
-# Create Password for VNC Server
-#x11vnc -storepasswd
-
 # Config X11VNC
 SERVICE_FILE="/etc/systemd/system/x11vnc.service"
 sudo bash -c "cat > $SERVICE_FILE" <<EOF
