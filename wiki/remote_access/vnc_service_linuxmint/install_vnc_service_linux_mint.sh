@@ -12,6 +12,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
+# Mude a variável "$USER" para o usuário atual!
 ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/$USER/.vnc/passwd -rfbport 5901 -shared
 
 [Install]

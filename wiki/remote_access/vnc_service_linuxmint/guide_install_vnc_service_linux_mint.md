@@ -8,12 +8,8 @@ sudo sh -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/wiki/rem
 # Senha VNC
 x11vnc -storepasswd
 
-# Obter o nome do usuário atual
-USERNAME=$(whoami)
-
-# Modificar o arquivo do serviço systemd
-SERVICE_FILE="/etc/systemd/system/x11vnc.service"
-sudo sed -i "s|ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/\$USER/.vnc/passwd -rfbport 5901 -shared|ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/$USERNAME/.vnc/passwd -rfbport 5901 -shared|" $SERVICE_FILE
+# Mude a variável "$USER" para o usuário atual!
+sudo nano /etc/systemd/system/x11vnc.service
 
 ```
 
