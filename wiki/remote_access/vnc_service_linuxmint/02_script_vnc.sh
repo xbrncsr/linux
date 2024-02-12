@@ -5,7 +5,6 @@ sudo apt install -y x11vnc
 
 # Create Password for VNC Server
 #x11vnc -storepasswd
-x11vnc -storepasswd $HOME/.vnc/passwd
 
 # Config X11VNC
 SERVICE_FILE="/etc/systemd/system/x11vnc.service"
@@ -16,7 +15,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/$(whoami)/.vnc/passwd -rfbport 5901 -shared
+ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/$USER/.vnc/passwd -rfbport 5901 -shared
 
 [Install]
 WantedBy=multi-user.target
