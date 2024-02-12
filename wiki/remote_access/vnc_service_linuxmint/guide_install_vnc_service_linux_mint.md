@@ -1,6 +1,12 @@
 # Install VNC Service Linux Mint 21.3
 source: <https://tecadmin.net/setup-x11vnc-server-on-ubuntu-linuxmint/>
 
+## LINK SCRIPT:
+```bash
+sudo sh -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/wiki/remote_access/ssh_service_ubuntu/install_ssh_service_ubuntu.sh -O -)"
+
+```
+
 ## Install X11VNC
 ```bash
 sudo apt install -y x11vnc
