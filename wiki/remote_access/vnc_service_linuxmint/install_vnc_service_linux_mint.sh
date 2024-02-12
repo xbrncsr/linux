@@ -17,14 +17,15 @@ After=multi-user.target
  
 [Service]
 Type=simple
-ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/$USER/.vnc/passwd -rfbport 5901 -shared
+#ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/$USER/.vnc/passwd -rfbport 5901 -shared
+ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth ~/.vnc/passwd -rfbport 5901 -shared
  
 [Install]
 WantedBy=multi-user.target
 EOF
 
 # Replace "YOURUSERNAME" with the actual username
-sudo sed -i 's/YOURUSERNAME/'"$USER"'/g' /etc/systemd/system/x11vnc.service
+#sudo sed -i 's/YOURUSERNAME/'"$USER"'/g' /etc/systemd/system/x11vnc.service
 
 # Reload systemd manager configuration
 sudo systemctl daemon-reload
