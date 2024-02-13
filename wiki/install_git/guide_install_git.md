@@ -5,7 +5,7 @@
 ## Install Git - Fedora
 * LINK SCRIPT:
 ```bash
-sudo sh -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/wiki/install_git/install_git_fedora.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/wiki/install_git/install_git_fedora.sh -O -)"
 
 ```
 
@@ -17,7 +17,7 @@ sudo dnf install -y git
 ## Install Git - Ubuntu
 * LINK SCRIPT:
 ```bash
-sudo sh -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/wiki/install_git/install_git_ubuntu.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/linux/main/wiki/install_git/install_git_ubuntu.sh -O -)"
 
 ```
 

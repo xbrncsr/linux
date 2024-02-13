@@ -32,11 +32,3 @@ sudo dnf install intel-media-driver
 sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
 
 ```
-
-
-## Install Media Codecs - Ubuntu
-```bash
-sudo apt install ubuntu-restricted-extras
-
-```
-

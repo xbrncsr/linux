@@ -14,14 +14,3 @@ sudo dnf upgrade --refresh -y && sudo dnf groupupdate core -y
 sudo dnf autoremove -y && sudo dnf clean all -y
 
 ```
-
-## Update System - Ubuntu
-```bash
-sudo apt udpate && sudo apt upgrade -y
-
-```
-
-```bash
-sudo apt autoremove -y && sudo apt autoclean -y
-
-```

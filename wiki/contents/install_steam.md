@@ -9,14 +9,3 @@ flatpak install flathub com.valvesoftware.Steam
 sudo dnf install -y steam
 
 ```
-
-## Install Steam - Ubuntu
-```bash
-sudo apt install -y steam
-
-```
-
-```bash
-sudo dpkg --add-architecture i386
-
-```
