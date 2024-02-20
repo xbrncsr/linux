@@ -1,15 +1,3 @@
-
-#### VLC
-```bash
-flatpak install -y flathub org.videolan.VLC
-
-```
-
-```bash
-sudo snap install vlc
-
-```
-
 ```bash
 sudo dnf install -y vlc
 
@@ -17,12 +5,6 @@ sudo dnf install -y vlc
 
 ```bash
 sudo apt install -y vlc
-
-```
-
-#### GIMP
-```bash
-flatpak install -y flathub org.gimp.GIMP
 
 ```
 
@@ -36,36 +18,8 @@ sudo apt install -y gimp
 
 ```
 
-#### Dropbox
-```bash
-flatpak install -y flathub com.dropbox.Client
-
-```
-
 ```bash
 sudo dnf install -y dropbox nautilus-dropbox
-
-```
-
-```bash
-sudo apt install -y dropbox nautilus-dropbox
-
-```
-
-#### Discord
-```bash
-flatpak install -y flathub com.discordapp.Discord
-
-```
-#### Extension Manager
-```bash
-flatpak install -y flathub com.mattjakeman.ExtensionManager
-
-```
-
-#### Obsidian
-```bash
-flatpak install -y flathub md.obsidian.Obsidian
 
 ```
 
@@ -74,20 +28,8 @@ sudo snap install obsidian --classic
 
 ```
 
-#### Kdenlive
-```bash
-flatpak install -y flathub org.kde.kdenlive
-
-```
-
 ```bash
 sudo snap install kdenlive
-
-```
-
-#### Remmina
-```bash
-flatpak install -y flathub org.remmina.Remmina
 
 ```
 
@@ -236,19 +178,8 @@ flatpak install -y flathub org.winehq.Wine
 
 ```
 
-#### winbox
-```bash
-sudo snap install winbox
-
-```
-
 #### Shotcut
 ```bash
 flatpak install -y flathub org.shotcut.Shotcut
-
-```
-
-```bash
-sudo snap install shotcut --classic
 
 ```
